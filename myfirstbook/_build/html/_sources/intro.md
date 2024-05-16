@@ -12,4 +12,6 @@ You can contact me at pankajkalan@gmail.com.
 <!--
 Copy paste this in terminal for quick website update:
 poetry run jupyter-book build myfirstbook &&  git add -A && git commit -m "publish" && git push && poetry run ghp-import -n -p -f myfirstbook/_build/html
+
+Reference: https://medium.com/@dr.junghoonson/simplest-way-to-publish-your-jupyter-notebooks-on-the-open-web-using-jupyter-book-and-github-pages-eea144031d6f
 -->
