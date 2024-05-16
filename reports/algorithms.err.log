@@ -1,0 +1,123 @@
+Traceback (most recent call last):
+  File "/home/codespace/.cache/pypoetry/virtualenvs/pkalan-gatech-github-io-zGEN3eKU-py3.10/lib/python3.10/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/home/codespace/.cache/pypoetry/virtualenvs/pkalan-gatech-github-io-zGEN3eKU-py3.10/lib/python3.10/site-packages/nbclient/client.py", line 1314, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/home/codespace/.cache/pypoetry/virtualenvs/pkalan-gatech-github-io-zGEN3eKU-py3.10/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/codespace/.cache/pypoetry/virtualenvs/pkalan-gatech-github-io-zGEN3eKU-py3.10/lib/python3.10/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/home/codespace/.cache/pypoetry/virtualenvs/pkalan-gatech-github-io-zGEN3eKU-py3.10/lib/python3.10/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/codespace/.cache/pypoetry/virtualenvs/pkalan-gatech-github-io-zGEN3eKU-py3.10/lib/python3.10/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+#@title Imports and Functions
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.interpolate import make_interp_spline
+import pandas as pd
+from IPython.display import IFrame
+import networkx as nx
+import pydot
+import pylab
+from networkx.drawing.nx_pydot import graphviz_layout
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+import textwrap
+
+
+if 'global_nodes' not in globals():
+  global global_nodes
+  global_nodes = {1: "ML4T", 2: "AI4R", 3: "ML", 4: "Ethics", 5:"DVA", 6: "SDP"}
+
+def create_and_plot_graph(nodes, edges, figsize=(15,8), export_filename=None, save_data=False, add_to_global=False):
+
+  # # Wrap node labels to fit in graph nodes - replace all space with \n
+  for key, value in nodes.items():
+    nodes[key] = textwrap.fill(
+        value, width=round(np.sqrt(len(value))*2), initial_indent='', subsequent_indent='', expand_tabs=True,
+        replace_whitespace=True, fix_sentence_endings=False, break_long_words=False,
+        drop_whitespace=True, break_on_hyphens=False, tabsize=8, max_lines=None, placeholder=' [...]')
+
+  # auto generated edges
+  node_list = list(nodes.keys())
+  for i in node_list:
+    j = 10*i + 1
+    while j in node_list:
+      edges.append([i, j])
+      j+=1
+
+  # Create graph
+  T = nx.DiGraph(overlap=False)
+
+  # Add edges to graph with color according to node label lengths
+  node_label_lengths = []
+  for edge in edges:
+    T.add_edge(nodes[edge[0]], nodes[edge[1]])
+    # node_label_lengths.append(min(len(str(edge[0])), len(str(edge[1]))))
+    node_label_lengths.append(len(str(edge[0])))
+
+  cm = pylab.get_cmap('copper')
+  # colors = [cm(1.*(i-min(node_label_lengths))/max(1,(max(node_label_lengths)-min(node_label_lengths)))) for i in node_label_lengths]
+  colors = [cm(i/max(node_label_lengths)) for i in node_label_lengths]
+
+  plt.figure(figsize=figsize)
+
+  # Set graph visualization type
+  pos = graphviz_layout(T, prog="neato") # dot, twopi, fdp, sfdp, circo, neato
+  # pos = nx.kamada_kawai_layout(T)
+  # pos = nx.spring_layout(T)
+
+  # Set options
+  options = {# "edge_color": "#C5C6D0", "font_color": "black",  "alpha": 0.5, 'edge_cmap': 'plasma'
+            "font_size": 10, 'font_color': 'black', "node_shape": "s", "node_color": "None", 'arrowstyle': 'wedge',
+             "edgecolors": "None", "linewidths": 0.2, "width": 0.5, "node_size": 1500, 'arrowsize':15, "edge_color": colors,
+             'bbox': dict(facecolor="white", edgecolor='black', boxstyle='round, pad=0.1',linewidth=0.1, alpha=0.2)
+            }
+
+  g = nx.draw(T, pos, with_labels=True, **options)
+
+  # Added functionality
+  if export_filename == None:
+    plt.show()
+  else:
+    plt.savefig(export_filename, dpi=300)
+
+  if save_data:
+    data = {'id':nodes.keys(), 'name':nodes.values()}
+    nodes_df = pd.DataFrame(data)
+    nodes_df.to_csv('nodes_df.csv')
+    data = {'source':[i[0] for i in edges],
+            'target':[i[1] for i in edges]}
+    edges_df = pd.DataFrame(data)
+    edges_df.to_csv('edges_df.csv')
+  if add_to_global:
+    # Find the key of value of first node in global
+    first_value_local = list(nodes.values())[0]
+    try:
+      key_match_global = str(list(global_nodes.keys())[list(global_nodes.values()).index(first_value_local)])
+      msg = "Added to existing branch in global"
+      for key, value in nodes.items():
+        global_nodes[int(key_match_global + str(key)[1:])] = value
+    except:
+      msg = "Did not find existing branch in global to attach"
+
+    return msg
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+Cell [0;32mIn[2], line 4[0m
+[1;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpyplot[39;00m [38;5;28;01mas[39;00m [38;5;21;01mplt[39;00m
+[1;32m      3[0m [38;5;28;01mimport[39;00m [38;5;21;01mnumpy[39;00m [38;5;28;01mas[39;00m [38;5;21;01mnp[39;00m
+[0;32m----> 4[0m [38;5;28;01mfrom[39;00m [38;5;21;01mscipy[39;00m[38;5;21;01m.[39;00m[38;5;21;01minterpolate[39;00m [38;5;28;01mimport[39;00m make_interp_spline
+[1;32m      5[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m
+[1;32m      6[0m [38;5;28;01mfrom[39;00m [38;5;21;01mIPython[39;00m[38;5;21;01m.[39;00m[38;5;21;01mdisplay[39;00m [38;5;28;01mimport[39;00m IFrame
+
+[0;31mModuleNotFoundError[0m: No module named 'scipy'
+
