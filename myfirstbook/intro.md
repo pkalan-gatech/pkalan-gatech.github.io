@@ -1,11 +1,14 @@
-# Welcome to your Jupyter Book
+# About me
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+## Pankaj Kalan
+* Master's in Computer Science from Georgia Tech. Specialization: Machine Learning.
+* Master's in Mechanical Engineering from Michigan Tech.
 
-Check out the content pages bundled with this sample book to see more.
-
+Excerpts of my work in public domain:
 ```{tableofcontents}
 ```
+You can contact me at pankajkalan@gmail.com.
+
+<!--
+poetry run jupyter-book build myfirstbook &&  git add -A && git commit -m "publish" && git push && poetry run ghp-import -n -p -f myfirstbook/_build/html
+-->
