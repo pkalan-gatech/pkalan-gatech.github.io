@@ -4,4 +4,4 @@
 format: jb-book
 root: intro
 chapters:
-- file: supervised_learning.ipynb
+- file: algorithms.ipynb
