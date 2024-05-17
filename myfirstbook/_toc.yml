@@ -4,4 +4,4 @@
 format: jb-book
 root: intro
 chapters:
-- file: algorithms.ipynb#max-flow
+- file: algorithms.ipynb
