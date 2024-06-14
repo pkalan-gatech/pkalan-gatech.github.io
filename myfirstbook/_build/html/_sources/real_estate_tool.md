@@ -12,4 +12,5 @@ Lily (26-year-old female) recently got a tech job in Georgia and is searching fo
 She gives high priority to personal safety. She is interested in making new friends and date people.\
 She would like to live closer to nature and amenities.\
 Let us see how our tool can help her.
-<img src="example.png?raw=true:, width=100" alt="Demonstrative example">
+
+<img src="https://github.com/pkalan-gatech/pkalan-gatech.github.io/blob/main/myfirstbook/example.png?raw=true:, width=100" alt="Demonstrative example">
