@@ -5,4 +5,4 @@ format: jb-book
 root: intro
 chapters:
 - file: algorithms.ipynb
-- file: real_estate_tool.ipynb
+- file: real_estate_tool.md
