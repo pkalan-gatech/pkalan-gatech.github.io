@@ -5,4 +5,4 @@ format: jb-book
 root: intro
 chapters:
 - file: algorithms.ipynb
-- file: CSE6242_Group_Project_Poster.pdf
+- file: real_estate_tool.ipynb
