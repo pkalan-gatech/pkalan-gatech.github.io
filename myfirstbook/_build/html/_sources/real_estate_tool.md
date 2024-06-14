@@ -1,3 +1,5 @@
+:orphan:
+
 # Real Estate Tool
 Link to full paper (pdf): <a href=https://github.com/pkalan-gatech/pkalan-gatech.github.io/blob/main/myfirstbook/CSE6242_Group_Project_Poster.pdf>CSE6242_Group_Project_Poster.pdf</a>\
 Authors: Pankaj Kalan, Morteza Maleki, Brad Beattie, Nivedita Sengupta, Poonam Dongare, Yidan Fu
