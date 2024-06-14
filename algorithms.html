@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Algorithms &#8212; pankajkalan.com</title>
+    <title>Graph visualization of algorithms to understand interrelations &#8212; pankajkalan.com</title>
   
   
   
@@ -176,7 +176,7 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Algorithms</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Graph visualization of algorithms to understand interrelations</a></li>
 </ul>
 
     </div>
@@ -362,7 +362,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Algorithms</h1>
+    <h1>Graph visualization of algorithms to understand interrelations</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -372,6 +372,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-setup-to-create-graphs">Initial setup to create graphs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#divide-and-conquer">Divide and Conquer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-programming">Dynamic Programming</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#randomized-algorithms">Randomized Algorithms</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-algorithms">Graph Algorithms</a></li>
@@ -389,17 +391,15 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="algorithms">
-<h1>Algorithms<a class="headerlink" href="#algorithms" title="Link to this heading">#</a></h1>
-<div class="cell tag_hide-input docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
-</summary>
+  <p><a href="https://colab.research.google.com/github/pkalan-gatech/pkalan-gatech.github.io/blob/main/myfirstbook/algorithms.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+<section class="tex2jax_ignore mathjax_ignore" id="graph-visualization-of-algorithms-to-understand-interrelations">
+<h1>Graph visualization of algorithms to understand interrelations<a class="headerlink" href="#graph-visualization-of-algorithms-to-understand-interrelations" title="Link to this heading">#</a></h1>
+<p>Frequently used algorithms and their properties are represented as graphs to understand how they are connected to each other.</p>
+<section id="initial-setup-to-create-graphs">
+<h2>Initial setup to create graphs<a class="headerlink" href="#initial-setup-to-create-graphs" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#@title Imports and Functions</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="c1"># from scipy.interpolate import make_interp_spline</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -415,7 +415,7 @@ document.write(`
 
 <span class="k">if</span> <span class="s1">&#39;global_nodes&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">globals</span><span class="p">():</span>
   <span class="k">global</span> <span class="n">global_nodes</span>
-  <span class="n">global_nodes</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;ML4T&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;AI4R&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;ML&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;Ethics&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span><span class="s2">&quot;DVA&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="s2">&quot;SDP&quot;</span><span class="p">}</span>
+  <span class="n">global_nodes</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;Divide</span><span class="se">\n</span><span class="s2">and</span><span class="se">\n</span><span class="s2">Conquer&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;Dynamic</span><span class="se">\n</span><span class="s2">Programming&quot;</span><span class="p">}</span>
 
 <span class="k">def</span> <span class="nf">create_and_plot_graph</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">edges</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="n">export_filename</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">save_data</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">add_to_global</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 
@@ -483,28 +483,25 @@ document.write(`
     <span class="n">first_value_local</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">nodes</span><span class="o">.</span><span class="n">values</span><span class="p">())[</span><span class="mi">0</span><span class="p">]</span>
     <span class="k">try</span><span class="p">:</span>
       <span class="n">key_match_global</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">global_nodes</span><span class="o">.</span><span class="n">keys</span><span class="p">())[</span><span class="nb">list</span><span class="p">(</span><span class="n">global_nodes</span><span class="o">.</span><span class="n">values</span><span class="p">())</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">first_value_local</span><span class="p">)])</span>
-      <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;Added to existing branch in global&quot;</span>
+      <span class="c1"># msg = &quot;Added to existing branch in global&quot;</span>
       <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">nodes</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
         <span class="n">global_nodes</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">key_match_global</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)[</span><span class="mi">1</span><span class="p">:])]</span> <span class="o">=</span> <span class="n">value</span>
     <span class="k">except</span><span class="p">:</span>
-      <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;Did not find existing branch in global to attach&quot;</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Did not find existing branch in global to attach&quot;</span><span class="p">)</span>
 
-    <span class="k">return</span> <span class="n">msg</span>
+    <span class="k">return</span> <span class="kc">None</span>
 </pre></div>
 </div>
 </div>
-</details>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
-</summary>
+</section>
+<section id="divide-and-conquer">
+<h2>Divide and Conquer<a class="headerlink" href="#divide-and-conquer" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#@title Divide and Conquer { vertical-output: true}</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#@title Divide and Conquer {vertical-output: true}</span>
 <span class="n">nodes</span> <span class="o">=</span> <span class="p">{</span>   <span class="c1"># write the nodes for graph to a csv file</span>
-            <span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;Divide and Conquer&#39;</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;Divide</span><span class="se">\n</span><span class="s2">and</span><span class="se">\n</span><span class="s2">Conquer&quot;</span><span class="p">,</span>
             <span class="mi">11</span><span class="p">:</span> <span class="s1">&#39;fast modular exponentiation algorithm&#39;</span><span class="p">,</span>
             <span class="mi">12</span><span class="p">:</span> <span class="s2">&quot;euclid&#39;s GCD algo&quot;</span><span class="p">,</span>
             <span class="mi">13</span><span class="p">:</span> <span class="s1">&#39;multiplying n-bit integers&#39;</span><span class="p">,</span>
@@ -522,16 +519,38 @@ document.write(`
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Did not find existing branch in global to attach&#39;
-</pre></div>
-</div>
 <img alt="_images/c0dd095b81c1b36ec8b48bd1ada52936addb102677f9f3646fa3d8fa957c8ead.png" src="_images/c0dd095b81c1b36ec8b48bd1ada52936addb102677f9f3646fa3d8fa957c8ead.png" />
 </div>
 </div>
+</section>
 <section id="dynamic-programming">
 <h2>Dynamic Programming<a class="headerlink" href="#dynamic-programming" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#@title Divide and Conquer {vertical-output: true}</span>
+<span class="n">nodes</span> <span class="o">=</span> <span class="p">{</span>   <span class="c1"># write the nodes for graph to a csv file</span>
+            <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;Dynamic</span><span class="se">\n</span><span class="s2">Programming&quot;</span><span class="p">,</span>
+            <span class="mi">11</span><span class="p">:</span> <span class="s1">&#39;FIB&#39;</span><span class="p">,</span>
+            <span class="mi">12</span><span class="p">:</span> <span class="s2">&quot;LIS&quot;</span><span class="p">,</span>
+            <span class="mi">13</span><span class="p">:</span> <span class="s1">&#39;LCS&#39;</span><span class="p">,</span>
+            <span class="mi">14</span><span class="p">:</span> <span class="s1">&#39;Knapsack&#39;</span><span class="p">,</span>
+            <span class="mi">15</span><span class="p">:</span> <span class="s1">&#39;Chain Multiply&#39;</span><span class="p">,</span>
+            <span class="mi">16</span><span class="p">:</span> <span class="s1">&#39;Shortest Paths&#39;</span><span class="p">,</span>
+            <span class="mi">161</span><span class="p">:</span> <span class="s1">&#39;Bellman-Ford&#39;</span><span class="p">,</span>
+            <span class="mi">162</span><span class="p">:</span> <span class="s1">&#39;All-Pairs Shortest Paths&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="n">scale</span> <span class="o">=</span> <span class="mf">0.6</span>
+<span class="n">create_and_plot_graph</span><span class="p">(</span>
+    <span class="n">nodes</span><span class="p">,</span> <span class="n">edges</span><span class="o">=</span><span class="p">[],</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="o">*</span><span class="n">scale</span><span class="p">,</span><span class="mf">8.5</span><span class="o">*</span><span class="n">scale</span><span class="p">),</span> <span class="n">export_filename</span><span class="o">=</span><span class="s2">&quot;required_skills.pdf&quot;</span><span class="p">,</span> <span class="n">save_data</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">add_to_global</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/93e8874ad9c9e8cd4412a9635406c3a77071e9c76837078be52a112c93f29108.png" src="_images/93e8874ad9c9e8cd4412a9635406c3a77071e9c76837078be52a112c93f29108.png" />
+</div>
+</div>
 </section>
 <section id="randomized-algorithms">
 <h2>Randomized Algorithms<a class="headerlink" href="#randomized-algorithms" title="Link to this heading">#</a></h2>
@@ -605,6 +624,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-setup-to-create-graphs">Initial setup to create graphs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#divide-and-conquer">Divide and Conquer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-programming">Dynamic Programming</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#randomized-algorithms">Randomized Algorithms</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-algorithms">Graph Algorithms</a></li>
