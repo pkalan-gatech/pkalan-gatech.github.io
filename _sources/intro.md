@@ -1,6 +1,11 @@
 # About me
 
-## Pankaj Kalan
+<img style="float: right; margin-right: 10px;" src="dp1.png" width="120">
+
+
+### Pankaj Kalan
+Email: pankajkalan@gmail.com
+
 
 ### Education
 Masters in <font color="brown">Computer Science</font> from <font color="brown">Georgia Tech</font>. (Specialization: Machine Learning.)\
