@@ -1,4 +1,4 @@
-<img style="float: right; margin-right: 10px;" src="dp1.png" width="120">
+<img style="float: right; margin-right: 10px;" src="https://github.com/pkalan-gatech/pkalan-gatech.github.io/blob/main/myfirstbook/dp1.png" width="120">
 
 # About me
 
