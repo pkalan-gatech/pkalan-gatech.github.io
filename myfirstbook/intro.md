@@ -1,5 +1,5 @@
 # About me
----
+
 ## Pankaj Kalan
 
 ### Education
@@ -13,7 +13,7 @@ Program Development Leader and Systems Engineer at Faurecia.
 ### Excerpts from my work in the public domain
 ```{tableofcontents}
 ```
----
+<hr>
 You can contact me at pankajkalan@gmail.com.
 
 <!--
