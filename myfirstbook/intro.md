@@ -3,8 +3,8 @@
 ## Pankaj Kalan
 
 ### Education
-Masters in <font color="blue">Computer Science</font> from <font color="blue">Georgia Tech</font>. (Specialization: Machine Learning.)\
-Masters in <font color="blue">Mechanical Engineering</font> from <font color="blue">Michigan Tech</font>.
+Masters in <font color="brown">Computer Science</font> from <font color="brown">Georgia Tech</font>. (Specialization: Machine Learning.)\
+Masters in <font color="brown">Mechanical Engineering</font> from <font color="brown">Michigan Tech</font>.
 
 ### Work Experience
 Technical Specialist at Cummins Inc.\
