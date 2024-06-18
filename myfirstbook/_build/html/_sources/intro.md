@@ -1,10 +1,16 @@
 # About me
 
 ## Pankaj Kalan
-* Master's in Computer Science from Georgia Tech. Specialization: Machine Learning.
-* Master's in Mechanical Engineering from Michigan Tech.
 
-Excerpts of my work in public domain:
+### Education
+Masters in <font color="blue">Computer Science</font> from <font color="blue">Georgia Tech</font>. (Specialization: Machine Learning.)\
+Masters in <font color="blue">Mechanical Engineering</font> from <font color="blue">Michigan Tech</font>.
+
+### Work Experience
+Technical Specialist at Cummins Inc.\
+Program Development Leader and Systems Engineer at Faurecia.
+
+### Excerpts of my work in public domain:
 ```{tableofcontents}
 ```
 You can contact me at pankajkalan@gmail.com.
