@@ -5,4 +5,5 @@ format: jb-book
 root: intro
 chapters:
 - file: real_estate_tool.md
+- file: hateful_memes.md
 - file: algorithms.ipynb
