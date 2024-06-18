@@ -7,8 +7,8 @@ Email: pankajkalan@gmail.com
 
 
 ### Education
-Masters in <font color="#0000EE">Computer Science</font> from <font color="#0000EE">Georgia Tech</font>. (Specialization: Machine Learning.)\
-Masters in <font color="#0000EE">Mechanical Engineering</font> from <font color="#0000EE">Michigan Tech</font>.
+Masters in <font color="#0000FF">Computer Science</font> from <font color="#0000FF">Georgia Tech</font>. (Specialization: Machine Learning.)\
+Masters in <font color="#0000FF">Mechanical Engineering</font> from <font color="#0000FF">Michigan Tech</font>.
 
 ### Work Experience
 Technical Specialist at Cummins Inc.\
