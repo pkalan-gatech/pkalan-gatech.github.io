@@ -10,7 +10,7 @@ Masters in <font color="blue">Mechanical Engineering</font> from <font color="bl
 Technical Specialist at Cummins Inc.\
 Program Development Leader and Systems Engineer at Faurecia.
 
-### Excerpts from my work in the public domain:
+### Excerpts from my work in the public domain
 ```{tableofcontents}
 ```
 You can contact me at pankajkalan@gmail.com.
