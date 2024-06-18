@@ -1,7 +1,6 @@
-# About me
-
 <img style="float: right; margin-right: 10px;" src="dp1.png" width="120">
 
+# About me
 
 ### Pankaj Kalan
 Email: pankajkalan@gmail.com
