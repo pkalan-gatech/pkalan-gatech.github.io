@@ -1,5 +1,3 @@
-<img style="float: right; margin-left: 5px;" src="https://github.com/pkalan-gatech/pkalan-gatech.github.io/blob/main/myfirstbook/dp_transparent.png?raw=true" width="160">
-
 # About me
 
 ### Pankaj Kalan
@@ -16,8 +14,6 @@ Program Development Leader and Systems Engineer at <a href="https://www.faurecia
 ### Excerpts from my work in the public domain
 ```{tableofcontents}
 ```
-<hr>
-You can contact me at pankajkalan@gmail.com.
 
 <!--
 Copy paste this in terminal for quick website update:
