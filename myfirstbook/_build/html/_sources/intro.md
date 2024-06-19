@@ -5,7 +5,6 @@
 ### Pankaj Kalan
 Email: pankajkalan@gmail.com
 
-
 ### Education
 <b>Masters in Computer Science from <a href="https://www.cc.gatech.edu/news/graduate-computer-science-programs-climb-latest-national-rankings">Georgia Tech</a></b>. (Specialization: Machine Learning.)\
 Masters in Mechanical Engineering from <a href="https://www.mtu.edu/">Michigan Tech</a>.
