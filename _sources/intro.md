@@ -7,12 +7,12 @@ Email: pankajkalan@gmail.com
 
 
 ### Education
-Masters in <font color="#0000FF">Computer Science</font> from <font color="#0000FF">Georgia Tech</font>. (Specialization: Machine Learning.)\
-Masters in <font color="#0000FF">Mechanical Engineering</font> from <font color="#0000FF">Michigan Tech</font>.
+<b>Masters in Computer Science from <a href="https://www.cc.gatech.edu/news/graduate-computer-science-programs-climb-latest-national-rankings">Georgia Tech</a></b>. (Specialization: Machine Learning.)\
+Masters in Mechanical Engineering from <a href="https://www.mtu.edu/">Michigan Tech</a>.
 
 ### Work Experience
-Technical Specialist at Cummins Inc.\
-Program Development Leader and Systems Engineer at Faurecia.
+Technical Specialist at <a href="https://www.cummins.com/">Cummins Inc</a>.\
+Program Development Leader and Systems Engineer at <a href="https://www.faurecia.com/en">Faurecia</a>.
 
 ### Excerpts from my work in the public domain
 ```{tableofcontents}
