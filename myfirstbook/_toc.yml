@@ -6,4 +6,3 @@ root: intro
 chapters:
 - file: hateful_memes.md
 - file: real_estate_tool.md
-- file: algorithms.ipynb
