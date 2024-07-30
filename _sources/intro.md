@@ -3,15 +3,15 @@
 * Email: pankajkalan@gmail.com
 * LinkedIn: <a href="https://www.linkedin.com/in/pankajkalan/">pankajkalan</a>
 
-#### Education:
+##### Education:
 * Master of Science in Computer Science from <a href="https://www.cc.gatech.edu/news/graduate-computer-science-programs-climb-latest-national-rankings">Georgia Tech</a></b> with a specialization in Machine Learning.
 * Master of Science in Mechanical Engineering from <a href="https://www.mtu.edu/">Michigan Tech</a>.
 
-#### Work Experience:
+##### Work Experience:
 * Technical Specialist at <a href="https://www.cummins.com/">Cummins Inc</a>
 * Program Development Leader and Systems Engineer at <a href="https://www.faurecia.com/en">Faurecia</a>.
 
-#### Machine Learning Experience:
+##### Machine Learning Experience:
 * Data Collection and Analysis: Gathered extensive time-series datasets from the Electronic Control Module (ECM) on semi-truck fleets.
 * Predictive Maintenance: Analyzed time-series data to detect and predict hardware and software failures, ensuring timely maintenance and reducing downtime.
 * Feature Engineering and Data Preprocessing: Processed and engineered features from raw data to improve model performance. Applied techniques for cleaning and preparing the data, including handling missing values and normalizing data.
@@ -23,7 +23,7 @@
 * Tools and Technologies: Proficient in using tools and libraries such as TensorFlow, Keras, pandas, NumPy, and Jupyter notebooks for data analysis and modeling.
 * Deployment and Monitoring: Deployed models to production environments and monitored their performance over time, ensuring they meet the required accuracy and efficiency standards.
 
-#### Excerpts from my work in the public domain:
+##### Excerpts from my work in the public domain:
 ```{tableofcontents}
 ```
 
