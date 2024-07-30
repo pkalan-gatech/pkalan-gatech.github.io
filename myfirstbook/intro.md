@@ -23,7 +23,7 @@
 * Tools and Technologies: Proficient in using tools and libraries such as TensorFlow, Keras, pandas, NumPy, and Jupyter notebooks for data analysis and modeling.
 * Deployment and Monitoring: Deployed models to production environments and monitored their performance over time, ensuring they meet the required accuracy and efficiency standards.
 
-##### Excerpts from my work in the public domain:
+##### Projects:
 ```{tableofcontents}
 ```
 
