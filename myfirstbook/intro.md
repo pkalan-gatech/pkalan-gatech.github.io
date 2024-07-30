@@ -1,4 +1,4 @@
-<h3>About me:</h3>
+<h4>About me:</h4>
 <ul>
 <li>Name: Pankaj Kalan
 <li>Email: pankajkalan@gmail.com
@@ -6,19 +6,19 @@
 </ul>
 
 
-<h3>Education:</h3>
+<h4>Education:</h4>
 <ul>
 <li>Master of Science in Computer Science from <a href="https://www.cc.gatech.edu/news/graduate-computer-science-programs-climb-latest-national-rankings">Georgia Tech</a></b> with a specialization in Machine Learning.
 <li>Master of Science in Mechanical Engineering from <a href="https://www.mtu.edu/">Michigan Tech</a>.
 </ul>
 
-<h3>Work Experience:</h3>
+<h4>Work Experience:</h4>
 <ul>
 <li>Technical Specialist at <a href="https://www.cummins.com/">Cummins Inc</a>
 <li>Program Development Leader and Systems Engineer at <a href="https://www.faurecia.com/en">Faurecia</a>
 </ul>
 
-<h3>Machine Learning Experience:</h3>
+<h4>Machine Learning Experience:</h4>
 <ul>
 <li>Data Collection and Analysis: Gathered extensive time-series datasets from the Electronic Control Module (ECM) on semi-truck fleets.
 <li>Predictive Maintenance: Analyzed time-series data to detect and predict hardware and software failures, ensuring timely maintenance and reducing downtime.
@@ -32,7 +32,7 @@
 <li>Deployment and Monitoring: Deployed models to production environments and monitored their performance over time, ensuring they meet the required accuracy and efficiency standards.
 </ul>
 
-<h3>Excerpts from my work in the public domain:</h3>
+<h4>Excerpts from my work in the public domain:</h4>
 ```{tableofcontents}
 ```
 
