@@ -1,17 +1,17 @@
 # About me
 * Name: Pankaj Kalan
 * Email: pankajkalan@gmail.com
-* LinkedIn: <a href="https://www.linkedin.com/in/pankajkalan/">pankajkalan</a>
+* LinkedIn: <a href="https://www.linkedin.com/in/pankajkalan/">pankajkalan</a><br><br>
 
-##### Education:
+**Education:**
 * Master of Science in Computer Science from <a href="https://www.cc.gatech.edu/news/graduate-computer-science-programs-climb-latest-national-rankings">Georgia Tech</a></b> with a specialization in Machine Learning.
-* Master of Science in Mechanical Engineering from <a href="https://www.mtu.edu/">Michigan Tech</a>.
+* Master of Science in Mechanical Engineering from <a href="https://www.mtu.edu/">Michigan Tech</a>.<br><br>
 
-##### Work Experience:
+**Work Experience:**
 * Technical Specialist at <a href="https://www.cummins.com/">Cummins Inc</a>
-* Program Development Leader and Systems Engineer at <a href="https://www.faurecia.com/en">Faurecia</a>.
+* Program Development Leader and Systems Engineer at <a href="https://www.faurecia.com/en">Faurecia</a>.<br><br>
 
-##### Machine Learning Experience:
+**Machine Learning Experience:**
 * Data Collection and Analysis: Gathered extensive time-series datasets from the Electronic Control Module (ECM) on semi-truck fleets.
 * Predictive Maintenance: Analyzed time-series data to detect and predict hardware and software failures, ensuring timely maintenance and reducing downtime.
 * Feature Engineering and Data Preprocessing: Processed and engineered features from raw data to improve model performance. Applied techniques for cleaning and preparing the data, including handling missing values and normalizing data.
