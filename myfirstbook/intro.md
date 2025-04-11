@@ -1,6 +1,5 @@
-**About me:**
-* Name: Pankaj Kalan
-* Email: pankajkalan@gmail.com
+**Pankaj Kalan**
+* Email: <a href="mailto:pankajkalan@gmail.com">pankajkalan@gmail.com</a>
 * LinkedIn: <a href="https://www.linkedin.com/in/pankajkalan/">pankajkalan</a><br><br>
 
 **Education:**
@@ -28,6 +27,7 @@
 ```
 
 <!--
+Go To some .ipynb page, select kernel -> python -> jupyter-notebook-name (2nd option), then run following command:
 Copy paste this in terminal for quick website update:
 poetry run jupyter-book build myfirstbook &&  git add -A && git commit -m "publish" && git push && poetry run ghp-import -n -p -f myfirstbook/_build/html
 
