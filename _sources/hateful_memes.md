@@ -1,13 +1,12 @@
 # Multimodal (LLM and Vision) Deep Learning Pipeline: Detection of Hateful Memes on Social Media
-## Authors: Pankaj Kalan and Poonam Dongare 
-<a href="https://github.com/poonamsdongare/Deep-Learning-Projects/blob/main/README.md">GitHub Link</a>
+## Authors: Poonam Dongare and Pankaj Kalan
 
 ## Introduction
 The rise of social media has led to an increase in harmful content, including hateful memes. In response, Facebook [1] launched a competition to develop methods for detecting such memes.
 
 The primary objective of this project is to enhance the performance of hateful meme detection models. This involves not only achieving high accuracy but also ensuring that the models are capable of generalizing well across diverse datasets and meme formats. The project explores a range of cutting-edge deep learning architectures, and employs various data preprocessing and augmentation techniques to optimize performance. Memes in the dataset range from highly offensive to benign as shown in below example.
 
-![meme_example](Images/example_memes.png)
+![meme_example](images/example_memes.png)
 
 ## Approach:
 The winning solution of the original Facebook competition utilized the ConcatBERT model. Therefore, our approach aims to enhance ConcatBERT’s performance on the Hateful Memes dataset. To achieve this, we adopt a three-pronged strategy:
@@ -42,7 +41,7 @@ We also explored a text augmentation technique for creating synthetic data. Thes
 ## Model Development
 For this project, we utilized a Concat BERT model as the baseline architecture. Given the multimodal nature of the dataset, we adopted separate models for processing the image and text components. The text and image features extracted by these individual models are concatenated and subsequently passed through a multilayer perceptron for further processing. The architecture was designed with flexibility in mind, enabling easy swapping of language and vision modules for various experimental configurations. For the image module, we experimented with ResNet152, VGG16, and ConvNext. Ultimately, ResNet152 outperformed the others, and thus, it was selected for all subsequent experiments. Below figure shows the implementation of the concatBERT architecture in pytorch lightning module.
 
-![architecture](Images/architecture.png)
+![architecture](images/architecture.png)
 
 ## Result 
 In alignment with the three-pronged strategy, we conducted a series of experiments:
