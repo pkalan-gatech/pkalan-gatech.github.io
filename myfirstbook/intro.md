@@ -8,7 +8,7 @@
 * Master of Science in Mechanical Engineering from <a href="https://www.mtu.edu/">Michigan Tech</a>.<br><br>
 
 **Work Experience:**
-* Technical Specialist at <a href="https://www.cummins.com/">Cummins Inc</a>
+* Technical Specialist at <a href="https://www.cummins.com/">Cummins Inc</a>.
 * Program Development Leader and Systems Engineer at <a href="https://www.faurecia.com/en">Faurecia</a>.<br><br>
 
 # Personal Projects
