@@ -320,7 +320,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -336,6 +338,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">About Me</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#personal-projects">Personal Projects</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -345,7 +357,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="about-me">
+  <section class="tex2jax_ignore mathjax_ignore" id="about-me">
 <h1>About Me<a class="headerlink" href="#about-me" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>Name: Pankaj Kalan</p></li>
@@ -362,7 +374,9 @@ document.write(`
 <li><p>Technical Specialist at <a href="https://www.cummins.com/">Cummins Inc</a></p></li>
 <li><p>Program Development Leader and Systems Engineer at <a href="https://www.faurecia.com/en">Faurecia</a>.<br><br></p></li>
 </ul>
-<p><strong>Personal Projects:</strong></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="personal-projects">
+<h1>Personal Projects<a class="headerlink" href="#personal-projects" title="Link to this heading">#</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="hateful_memes.html">Multimodal (LLM and Vision) Deep Learning Pipeline: Detection of Hateful Memes on Social Media</a></li>
@@ -424,7 +438,22 @@ Reference: https://medium.com/@dr.junghoonson/simplest-way-to-publish-your-jupyt
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">About Me</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#personal-projects">Personal Projects</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>

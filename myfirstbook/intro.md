@@ -1,4 +1,4 @@
-### About Me
+# About Me
 * Name: Pankaj Kalan
 * Email: <a href="mailto:pankajkalan@gmail.com">pankajkalan@gmail.com</a>
 * LinkedIn: <a href="https://www.linkedin.com/in/pankajkalan/">pankajkalan</a><br><br>
@@ -11,7 +11,7 @@
 * Technical Specialist at <a href="https://www.cummins.com/">Cummins Inc</a>
 * Program Development Leader and Systems Engineer at <a href="https://www.faurecia.com/en">Faurecia</a>.<br><br>
 
-**Personal Projects:**
+# Personal Projects
 ```{tableofcontents}
 ```
 
