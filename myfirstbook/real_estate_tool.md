@@ -1,5 +1,5 @@
 # Big Data Analysis and Visualization: Real Estate Recommendation Tool
-Link to full paper: <a href=https://github.com/pkalan-gatech/pkalan-gatech.github.io/blob/main/myfirstbook/images/CSE6242_Group_Project_Poster.pdf>A Recommendation Tool for Real-Estate Neighborhood Search</a>\
+Link to the full paper: <a href=https://github.com/pkalan-gatech/pkalan-gatech.github.io/blob/main/myfirstbook/images/CSE6242_Group_Project_Poster.pdf>A Recommendation Tool for Real-Estate Neighborhood Search</a>\
 Authors: Pankaj Kalan, Morteza Maleki, Brad Beattie, Nivedita Sengupta, Poonam Dongare, Yidan Fu
 
 ## Introduction
