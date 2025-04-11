@@ -8,7 +8,7 @@ Accurate information is essential for good decision-making. This is especially t
 To answer these problems, we created a novel tool that lets the user select and prioritize numerous attributes, and then dynamically visualize their tailored results on a map. The details of the implementation are provided in the paper mentioned above. Our work has resulted in an interesting exploratory tool that has the potential for further refinement especially on the number of dimensions considered. This tool could provide insights to a subset of renters and home buyers that none of the existing market tools possess. Ultimately, we feel that a more informed decision will produce better results for the user and the community.
 
 ## Tool demonstration
-<b>Test case:</b> Lily (26-year-old female) recently got a tech job in Georgia and is searching for a good neighborhood to rent a house.\
+<b>Test case:</b> Lily (26 year old female) recently got a tech job in Georgia and is searching for a good neighborhood to rent a house.\
 She gives high priority to personal safety. She is interested in making new friends and date people.\
 She would like to live closer to nature and amenities.\
 
