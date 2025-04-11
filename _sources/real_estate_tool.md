@@ -1,5 +1,5 @@
 # Big Data Analysis and Visualization: Real Estate Recommendation Tool
-Link to full paper: <a href=https://github.com/pkalan-gatech/pkalan-gatech.github.io/blob/main/myfirstbook/CSE6242_Group_Project_Poster.pdf>A Recommendation Tool for Real-Estate Neighborhood Search</a>\
+Link to full paper: <a href=https://github.com/pkalan-gatech/pkalan-gatech.github.io/blob/main/myfirstbook/images/CSE6242_Group_Project_Poster.pdf>A Recommendation Tool for Real-Estate Neighborhood Search</a>\
 Authors: Pankaj Kalan, Morteza Maleki, Brad Beattie, Nivedita Sengupta, Poonam Dongare, Yidan Fu
 
 ## Introduction
@@ -14,4 +14,4 @@ She would like to live closer to nature and amenities.\
 
 Screenshot of how the tool can help her find an ideal neighborhood:
 
-<img src="https://github.com/pkalan-gatech/pkalan-gatech.github.io/blob/main/myfirstbook/example.png?raw=true:, width=100" alt="Demonstrative example">
+<img src="https://github.com/pkalan-gatech/pkalan-gatech.github.io/blob/main/myfirstbook/images/example.png?raw=true:, width=100" alt="Demonstrative example">
