@@ -61,7 +61,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Big Data Analysis and Visualization: Real Estate Recommendation Tool" href="real_estate_tool.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="intro.html" />
+    <link rel="prev" title="About Me" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -172,7 +172,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    <no title>
+                    About Me
                 </a>
             </li>
         </ul>
@@ -342,8 +342,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architecture">Architecture</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authors-pankaj-kalan-and-poonam-dongare">Authors: Pankaj Kalan and Poonam Dongare</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approach">Approach:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment">Environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preparation">Data Preparation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-development">Model Development</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#result">Result</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contact">Contact</a></li>
 </ul>
             </nav>
         </div>
@@ -357,14 +365,150 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="multimodal-llm-and-vision-deep-learning-pipeline-detection-of-hateful-memes-on-social-media">
 <h1>Multimodal (LLM and Vision) Deep Learning Pipeline: Detection of Hateful Memes on Social Media<a class="headerlink" href="#multimodal-llm-and-vision-deep-learning-pipeline-detection-of-hateful-memes-on-social-media" title="Link to this heading">#</a></h1>
-<p>Contact me at <a class="reference external" href="mailto:pankajkalan&#37;&#52;&#48;gmail&#46;com">pankajkalan<span>&#64;</span>gmail<span>&#46;</span>com</a> to access the complete paper and the Google Colab notebook to replicate these results.</p>
-<section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
-<p>Deep Learning models in the domains of language (LLMs) and vision (autonomous driving) are at the forefront of the contemporary technological advancements. Multimodal problems, which require simultaneous learning from both domains, pose significant challenges. An exemplary problem in this area is determining whether a meme is benign or hateful, a task highlighted by Facebook’s <a href="https://ai.meta.com/blog/hateful-memes-challenge-and-data-set/">Hateful Memes Challenge</a>. This discussion explores a multimodal approach to solving this problem and presents the associated results.</p>
+<section id="authors-pankaj-kalan-and-poonam-dongare">
+<h2>Authors: Pankaj Kalan and Poonam Dongare<a class="headerlink" href="#authors-pankaj-kalan-and-poonam-dongare" title="Link to this heading">#</a></h2>
+<p><a href="https://github.com/poonamsdongare/Deep-Learning-Projects/blob/main/README.md">GitHub Link</a></p>
 </section>
-<section id="architecture">
-<h2>Architecture<a class="headerlink" href="#architecture" title="Link to this heading">#</a></h2>
-<img src="https://github.com/pkalan-gatech/pkalan-gatech.github.io/blob/main/myfirstbook/Layer_structure.svg?raw=true:, width=100" alt="Demonstrative example" width=400>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>The rise of social media has led to an increase in harmful content, including hateful memes. In response, Facebook [1] launched a competition to develop methods for detecting such memes.</p>
+<p>The primary objective of this project is to enhance the performance of hateful meme detection models. This involves not only achieving high accuracy but also ensuring that the models are capable of generalizing well across diverse datasets and meme formats. The project explores a range of cutting-edge deep learning architectures, and employs various data preprocessing and augmentation techniques to optimize performance. Memes in the dataset range from highly offensive to benign as shown in below example.</p>
+<p><img alt="meme_example" src="Images/example_memes.png" /></p>
+</section>
+<section id="approach">
+<h2>Approach:<a class="headerlink" href="#approach" title="Link to this heading">#</a></h2>
+<p>The winning solution of the original Facebook competition utilized the ConcatBERT model. Therefore, our approach aims to enhance ConcatBERT’s performance on the Hateful Memes dataset. To achieve this, we adopt a three-pronged strategy:</p>
+<p>Model Enhancement: We incorporate advanced variations of the BERT model, such as RoBERTa and DeBERTa, to improve feature extraction and contextual understanding.
+Data Augmentation &amp; Preprocessing: We apply various data preprocessing techniques along with image and text augmentation to improve model robustness and generalization.
+Multimodal Model Integration: We evaluate state-of-the-art multimodal models, including ALFRED, Pro-Cap Prompt Hate, and CLIP, in conjunction with our data augmentation strategies to analyze potential performance gains.
+This approach systematically refines ConcatBERT’s capabilities while leveraging advanced architectures and augmentation methods for optimal performance.</p>
+</section>
+<section id="environment">
+<h2>Environment<a class="headerlink" href="#environment" title="Link to this heading">#</a></h2>
+<p>Facebook provides the MMF framework for various multimodal research tasks, including Hateful Memes and TextVQA. Initially, we set up the environment on a local machine, but due to high computational requirements, we migrated the setup to Google Colab. However, running MMF on Colab presented several challenges, including library compatibility issues and limited flexibility in modifying models within the framework.
+To overcome these limitations, we opted to build the model from scratch, referencing [2]. We developed the training pipeline using PyTorch Lightning to facilitate efficient experimentation and metric logging. PyTorch Lightning simplifies the implementation of PyTorch models by offering a high-level interface for code organization, training loop management, and handling essential tasks such as checkpointing and logging.</p>
+</section>
+<section id="dataset">
+<h2>Dataset<a class="headerlink" href="#dataset" title="Link to this heading">#</a></h2>
+<p>Facebook created a custom dataset[4] consisting of over 10,000 image-text pairs, each labeled as either Hateful or Not Hateful. The dataset includes five distinct types of memes, designed to capture various linguistic and visual nuances. One notable category within the dataset is Benign Confounders—these are memes where altering either the image or text with a single modification would render them non-hateful.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Meme Type</p></th>
+<th class="head"><p>Definition</p></th>
+<th class="head"><p>%</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Multimodal Hate</p></td>
+<td><p>Benign confounders are found for both modalities.</p></td>
+<td><p>40%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Unimodal Hate</p></td>
+<td><p>One or both modalities were already hateful on their own.</p></td>
+<td><p>10%</p></td>
+</tr>
+<tr class="row-even"><td><p>Benign Image</p></td>
+<td><p>The image is non-offensive.</p></td>
+<td><p>20%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Benign Text</p></td>
+<td><p>The text is non-offensive.</p></td>
+<td><p>20%</p></td>
+</tr>
+<tr class="row-even"><td><p>Random Not-Hateful</p></td>
+<td><p>Nothing about the meme can be construed as offensive.</p></td>
+<td><p>10%</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-preparation">
+<h2>Data Preparation<a class="headerlink" href="#data-preparation" title="Link to this heading">#</a></h2>
+<p>Due to the multimodal nature of the dataset, we hypothesized that the image model might learn low-level text features. To prevent this, we explored various methods for eliminating text from images. Below are the three approaches used.</p>
+<ol class="arabic simple">
+<li><p>Include an inpainting model based on Stable Diffusion through a Python packaged called Detextify.</p></li>
+<li><p>An inpainting model which used OpenCV’s built-in processing capabilities and Frozen East Text Detection as seen in Hate-CLIPper.</p></li>
+<li><p>Image cropping with Frozen East Text Detection.
+We also explored a text augmentation technique for creating synthetic data. These techniques were implemented with python’s NLPaug Package.</p></li>
+</ol>
+</section>
+<section id="model-development">
+<h2>Model Development<a class="headerlink" href="#model-development" title="Link to this heading">#</a></h2>
+<p>For this project, we utilized a Concat BERT model as the baseline architecture. Given the multimodal nature of the dataset, we adopted separate models for processing the image and text components. The text and image features extracted by these individual models are concatenated and subsequently passed through a multilayer perceptron for further processing. The architecture was designed with flexibility in mind, enabling easy swapping of language and vision modules for various experimental configurations. For the image module, we experimented with ResNet152, VGG16, and ConvNext. Ultimately, ResNet152 outperformed the others, and thus, it was selected for all subsequent experiments. Below figure shows the implementation of the concatBERT architecture in pytorch lightning module.</p>
+<p><img alt="architecture" src="Images/architecture.png" /></p>
+</section>
+<section id="result">
+<h2>Result<a class="headerlink" href="#result" title="Link to this heading">#</a></h2>
+<p>In alignment with the three-pronged strategy, we conducted a series of experiments:</p>
+<ol class="arabic simple">
+<li><p>Experiment 1: We evaluated different language modules (e.g., ConcatRoBERTa and ConcatDeBERTa) combined with the ResNet152 vision module within the ConcatBERT framework.</p></li>
+<li><p>Experiment 2: We applied various data augmentation techniques in conjunction with ConcatBERT, ConcatRoBERTa, and ConcatDeBERTa.</p></li>
+<li><p>Experiment 3: We explored the use of the Contrastive Language-Image Pre-Training (CLIP) model for multimodal learning.
+These experiments were designed to assess the impact of different configurations on model performance.</p></li>
+</ol>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>Accuracy</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Multimodal Concat BERT (baseline)</p></td>
+<td><p>67.77%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Multimodal Concat BERT (ours)</p></td>
+<td><p>61.65%</p></td>
+</tr>
+<tr class="row-even"><td><p>Multimodal Concat BERT - Image Cropping</p></td>
+<td><p>60.14%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Multimodal Concat BERT - Inpainting w/ Frozen East Text Detection</p></td>
+<td><p>62.53%</p></td>
+</tr>
+<tr class="row-even"><td><p>Multimodal Concat BERT - Text Augmentation w/ Contextual Word Embeddings</p></td>
+<td><p>60.96%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Multimodal Concat BERT - Text Augmentation w/ Synonym Replacement</p></td>
+<td><p>59.20%</p></td>
+</tr>
+<tr class="row-even"><td><p>Multimodal Concat DeBERTa</p></td>
+<td><p>58.89%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Multimodal Concat RoBERTa</p></td>
+<td><p>52.67%</p></td>
+</tr>
+<tr class="row-even"><td><p>Multimodal Concat RoBERTa - Transformer Encoder with 3 layers</p></td>
+<td><p>59.63%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Multimodal Concat RoBERTa - Transformer Encoder with ConvNext</p></td>
+<td><p>56.87%</p></td>
+</tr>
+<tr class="row-even"><td><p>Multimodal CLIP LPE (ViT-B/32) - Baseline</p></td>
+<td><p>62.40%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Multimodal CLIP LPE (ViT-B/32) - Web Entity Tags</p></td>
+<td><p>64.40%</p></td>
+</tr>
+<tr class="row-even"><td><p>Multimodal CLIP LPE (ViT-B/32) - WOAH Protected Categories</p></td>
+<td><p>85.30%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Multimodal CLIP LPE (ViT-B/32) - WOAH Attack Types</p></td>
+<td><p>88.68%</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<p>[1] Facebook is paying Accenture $500m a year to moderate content on its platforms. <a class="reference external" href="https://thehustle.co/09072021-facebook-accenture-moderation">https://thehustle.co/09072021-facebook-accenture-moderation</a>.</p>
+<p>[2] How to build a multimodal deep learning model to detect hateful memes. <a class="reference external" href="https://drivendata.co/blog/hateful-memes-benchmark/">https://drivendata.co/blog/hateful-memes-benchmark/</a>, 2024. Accessed: April 27, 2024. 2, 3</p>
+<p>[3] Facebookresearch/fine grained hateful memes. <a class="github reference external" href="https://github.com/facebookresearch/fine_grained_hateful_memes">facebookresearch/fine_grained_hateful_memes</a>.</p>
+<p>[4] Hateful Memes Dataset : <a class="reference external" href="https://arxiv.org/abs/2005.04790">https://arxiv.org/abs/2005.04790</a></p>
+<p>[5] Hateful Memes Challenge : <a class="reference external" href="https://www.drivendata.org/competitions/64/hateful-memes/">https://www.drivendata.org/competitions/64/hateful-memes/</a></p>
+</section>
+<section id="contact">
+<h2>Contact<a class="headerlink" href="#contact" title="Link to this heading">#</a></h2>
+<p>Contact us at <a class="reference external" href="mailto:poonamsdongare04&#37;&#52;&#48;gmail&#46;com">poonamsdongare04<span>&#64;</span>gmail<span>&#46;</span>com</a> or <a class="reference external" href="mailto:pankajkalan&#37;&#52;&#48;gmail&#46;com">pankajkalan<span>&#64;</span>gmail<span>&#46;</span>com</a> to access the complete paper and implementation code.</p>
 </section>
 </section>
 
@@ -404,7 +548,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">About Me</p>
       </div>
     </a>
     <a class="right-next"
@@ -432,8 +576,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architecture">Architecture</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authors-pankaj-kalan-and-poonam-dongare">Authors: Pankaj Kalan and Poonam Dongare</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approach">Approach:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment">Environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preparation">Data Preparation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-development">Model Development</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#result">Result</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contact">Contact</a></li>
 </ul>
   </nav></div>
 
