@@ -2,6 +2,7 @@
 * Name: Pankaj Kalan
 * Email: <a href="mailto:pankajkalan@gmail.com">pankajkalan@gmail.com</a>
 * LinkedIn: <a href="https://www.linkedin.com/in/pankajkalan/">pankajkalan</a><br><br>
+(Page last updated on 4/13/2025)
 
 **Education:**
 * Master of Science in Computer Science from <a href="https://www.cc.gatech.edu/news/graduate-computer-science-programs-climb-latest-national-rankings">Georgia Tech</a></b> with a specialization in Machine Learning.
@@ -16,7 +17,7 @@
 ```
 
 <!--
-Go To some .ipynb page, select kernel -> python -> jupyter-notebook-name (2nd option), then run following command:
+pip install jupyter-book ipykernel ghp-import
 Copy paste this in terminal for quick website update:
 poetry run jupyter-book build myfirstbook &&  git add -A && git commit -m "publish" && git push && poetry run ghp-import -n -p -f myfirstbook/_build/html
 
